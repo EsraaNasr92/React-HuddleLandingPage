@@ -7,7 +7,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Poppins';
   src: url('../public/fonts/Poppins-Regular.woff2') format('woff2'),
@@ -16,7 +15,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Poppins';
   src: url('../public/fonts/Poppins-Bold.woff2') format('woff2'),
@@ -25,7 +23,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Poppins';
   src: url('../public/fonts/Poppins-Medium.woff2') format('woff2'),
@@ -34,7 +31,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 *{
   box-sizing: border-box;
   margin: 0;
@@ -109,7 +105,7 @@ p{
 
 /* Heading 1 */
 h1 {
-  font-size: 56px;
+  font-size: 55px;
   font-weight: 700;
   line-height: 67px;
 }
@@ -125,32 +121,6 @@ h3 {
   font-weight: 700;
   line-height: 34px;
 }
-
-/* Pragraphs text large medium small */
-/* Body 1 */
-.text-lg {
-  color: var(--darkblue);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 27px;
-}
-/* Body 2 */
-.text-md {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-/* Body 3 */
-.text-sm {
-  color: var(--black);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-}
 /* Header style */
 .header--section{
   display: flex;
@@ -158,7 +128,6 @@ h3 {
   padding: 60px 100px;
 }
 /* Header style end */
-
 /* Hero section */
 .hero--section{
   text-align: center;
@@ -188,14 +157,12 @@ h3 {
   margin-top: 50px;
 }
 /* Hero section style ends */
-
 /* Counter section */
 .counter--section{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .counter-section-counter{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -215,9 +182,8 @@ h3 {
   font-weight: 400;
 }
 /* Counter section style ends */
-
 /* Grow and flow sections */
-.grow--section, .flow--section{
+.grow--section, .flow--section, .users--section{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -230,16 +196,16 @@ h3 {
 .flow--section{
   background-color: transparent;
 }
-.border-image-top {
+.grow--section .border-image-top {
   position: absolute;
   top: -199px;
   left: 0;
   width: 100%;
   height: 200px;
-  background-image: url(http://localhost:3000/static/media/bg-section-top-desktop-1.d6d9d44b00bbb80d5065.svg);
+  background-image: url(../public/img/bg-section-top-desktop-1.svg);
   background-size: cover;
 }
-.border-image-bottom {
+.grow--section .border-image-bottom {
   position: absolute;
   bottom: -200px;
   left: 0;
@@ -248,27 +214,54 @@ h3 {
   background-image: url('../public/img/bg-section-bottom-desktop-1.svg');
   background-size: cover;
 }
-.grow--section__img, .flow--section__img {
+.users--section .border-image-top {
+  position: absolute;
+  top: -199px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url(http://localhost:3000/static/media/bg-section-top-desktop-1.d6d9d44b00bbb80d5065.svg);
+  background-size: cover;
+}
+.users--section .border-image-bottom {
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url('../public/img/bg-section-bottom-desktop-1.svg');
+  background-size: cover;
+}
+.grow--section__img,
+.flow--section__img,
+.users--section__img {
   display: flex;
   justify-content: center;
 }
-.grow--section__img img, .flow--section__img img{
+.grow--section__img img,
+.flow--section__img img,
+.users--section__img img{
   width: 70%;
 }
-.grow--section__text, .flow--section__text{
+.grow--section__text,
+.flow--section__text,
+.users--section__text{
   padding: 0 80px;
 }
-.grow--section__text h1, .flow--section__text h1{
+.grow--section__text h1,
+.flow--section__text h1,
+.users--section__text h1{
   color: var(--netural-dark-cyan);
   padding-bottom: 30px;
 }
-.grow--section__text p, .flow--section__text p{
+.grow--section__text p,
+.flow--section__text p,
+.users--section__text p{
   color: var(--netural-dark-cyan);
   font-size: 20px;
   line-height: 30px;
 }
 /* Grow and flow sections style end */
-
 /* Footer section */
 .footer--section{
   background-color: var(--netural-dark-cyan);
