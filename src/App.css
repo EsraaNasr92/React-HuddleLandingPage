@@ -187,3 +187,30 @@ h3 {
   box-shadow: 2px 5px 6px 4px rgb(230, 229, 229);
 }
 /* Hero section style ends */
+
+/* Counter section */
+.counter--section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-section-counter{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 300px;
+  padding: 80px 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+.counter-section-counter h1{
+  font-size: 90px;
+  padding: 30px 0;
+}
+.counter-section-counter h4{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(153, 152, 152);
+  font-weight: 400;
+}
+/* Counter section style ends */
