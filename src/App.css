@@ -175,7 +175,7 @@ h3 {
 }
 .hero--section-paragraph {
   width: 33%;
-  margin: 30px auto;
+  margin: 30px auto 0px;
   font-size: 20px;
   color: var(--netural-dark-cyan);
   line-height: 30px;
@@ -185,6 +185,7 @@ h3 {
   font-size: 23px;
   font-weight: 500;
   box-shadow: 2px 5px 6px 4px rgb(230, 229, 229);
+  margin-top: 50px;
 }
 /* Hero section style ends */
 
@@ -267,3 +268,72 @@ h3 {
   line-height: 30px;
 }
 /* Grow and flow sections style end */
+
+/* Footer section */
+.footer--section{
+  background-color: var(--netural-dark-cyan);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 60px  150px;
+  color: var(--white);
+  gap: 230px;
+  position: relative;
+  margin-top: 250px;
+}
+.footer--section .border-image-top{
+  position: absolute;
+  top: -199px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url('../public/img/bg-footer-top-desktop.svg');
+  background-size: cover;
+}
+.footer-logo {
+  filter: invert(87%) sepia(99%) saturate(2%) hue-rotate(284deg) brightness(113%) contrast(100%);
+}
+.footer--section__content p,
+.footer--section__newsletter p{
+  font-size: 18px;
+  width: 64%;
+  line-height: 28px;
+  padding: 30px 0;
+}
+.footer--section__content-info{
+  line-height: 40px;
+}
+.phone img, .email img{
+  padding-right: 20px;
+}
+.footer--section__newsletter h2{
+  font-weight: 500;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.footer--section__newsletter-form input{
+  width: 60%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 7px;
+}
+.btn-subscribe{
+  border-radius: 7px;
+  margin-left: 50px;
+  border: none;
+  background-color: var(--primary-pink);
+  color: #fff;
+  padding: 17px 40px;
+  font-weight: 500;
+}
+.footer--section__content-social{
+  font-size: 40px;
+  margin: 40px 0;
+}
+.footer--section__content-social a{
+  color: var(--white);
+  padding: 0 7px;
+}
+.footer--section__content-social a:first-child{
+  padding: 0px 7px 0 0;
+}
+/* Footer section style ends */

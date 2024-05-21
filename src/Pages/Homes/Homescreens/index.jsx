@@ -1,5 +1,7 @@
+import Community from '../Community';
 import Counter from '../Counter';
 import Flow from '../Flow';
+import Footer from '../Footer';
 import Grow from '../Grow';
 import Header from '../Header';
 import HeroSection from '../HeroSection';
@@ -14,6 +16,8 @@ export default function index(){
             <Grow />
             <Flow />
             <User />
+            <Community />
+            <Footer />
         </>
     );
 }
