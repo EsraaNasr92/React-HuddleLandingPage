@@ -1,0 +1,189 @@
+/* Global CSS */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../public/fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../public/fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Regular.woff2') format('woff2'),
+      url('../public/fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Bold.woff2') format('woff2'),
+      url('../public/fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Medium.woff2') format('woff2'),
+      url('../public/fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans';
+  -webkit-font-smoothing: "Roboto", sans-serif;
+  -moz-osx-font-smoothing: "Roboto", sans-serif;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5{
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+p{
+  margin: 0;
+}
+:root{
+  --primary-pink: hsl(322, 100%, 66%);
+  --primary-light-pink: hsl(321, 100%, 78%);
+  --primary-light-red: hsl(0, 100%, 63%);
+  --netural-dark-cyan: hsl(192, 100%, 9%);
+  --natural-pale-blue: hsl(207, 100%, 98%);
+  --white: #fff;
+}
+.btn{
+  font-family: 'Poppins';
+  display: inline-block;
+  padding: 5px 30px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.btn-outline-primary{
+  padding: 11px 32px;
+  color: var(--primary-pink);
+  background-color: var(--white);
+  border: 2px solid var(--primary-pink);
+  font-weight: 500;
+}
+.btn-outline-primary:hover{
+  background-color: var(--white);
+  border-color: var(--primary-light-pink);
+}
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary-pink);
+  border: 1px solid var(--primary-pink);
+}
+.btn-primary:hover {
+  background-color: var(--primary-light-pink);
+  border: 1px solid var(--primary-light-pink);
+}
+/* Global CSS Ends */
+
+/* Heading 1 */
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67px;
+}
+/* Heading 2 */
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+/* Heading 3 */
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+/* Pragraphs text large medium small */
+/* Body 1 */
+.text-lg {
+  color: var(--darkblue);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+/* Body 2 */
+.text-md {
+  color: var(--darkblue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* Body 3 */
+.text-sm {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+/* Header style */
+.header--section{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+}
+/* Header style end */
+
+/* Hero section */
+.hero--section{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 200px 0;
+  
+}
+.hero--section-title{
+  color: var(--netural-dark-cyan);
+  font-size: 63px;
+}
+.hero--section-paragraph {
+  width: 33%;
+  margin: 30px auto;
+  font-size: 20px;
+  color: var(--netural-dark-cyan);
+  line-height: 30px;
+}
+.btn-primary{
+  padding: 30px 140px;
+  font-size: 23px;
+  font-weight: 500;
+  box-shadow: 2px 5px 6px 4px rgb(230, 229, 229);
+}
+/* Hero section style ends */
