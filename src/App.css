@@ -214,3 +214,56 @@ h3 {
   font-weight: 400;
 }
 /* Counter section style ends */
+
+/* Grow and flow sections */
+.grow--section, .flow--section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 60px 100px;
+  align-items: center;
+  background-color: hsl(206.7, 100%, 98.2%);
+  position: relative;
+  margin: 300px 0;
+}
+.flow--section{
+  background-color: transparent;
+}
+.border-image-top {
+  position: absolute;
+  top: -199px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url(http://localhost:3000/static/media/bg-section-top-desktop-1.d6d9d44b00bbb80d5065.svg);
+  background-size: cover;
+}
+.border-image-bottom {
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url('../public/img/bg-section-bottom-desktop-1.svg');
+  background-size: cover;
+}
+.grow--section__img, .flow--section__img {
+  display: flex;
+  justify-content: center;
+}
+.grow--section__img img, .flow--section__img img{
+  width: 70%;
+}
+.grow--section__text, .flow--section__text{
+  padding: 0 80px;
+}
+.grow--section__text h1, .flow--section__text h1{
+  color: var(--netural-dark-cyan);
+  padding-bottom: 30px;
+}
+.grow--section__text p, .flow--section__text p{
+  color: var(--netural-dark-cyan);
+  font-size: 20px;
+  line-height: 30px;
+}
+/* Grow and flow sections style end */
