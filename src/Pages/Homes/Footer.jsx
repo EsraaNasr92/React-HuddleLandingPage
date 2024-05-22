@@ -22,6 +22,10 @@ export default function Footer(){
                         <a href="#"><FaInstagram /></a>
                         <a href="#"><FaSquareTwitter /></a>
                     </div>
+                    <div className="copyright">
+                        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                        Coded by <a href="https://github.com/esraaNasr92">Esraa Nasr</a>.
+                    </div>
             </div>
             <div className="footer--section__newsletter">
                 <h2>Newsletter</h2>
